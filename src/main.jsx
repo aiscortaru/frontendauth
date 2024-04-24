@@ -9,8 +9,9 @@ import {
 
 import App from './App';
 
-import HomePage from './pages/HomePage/HomePage';
+import HomePage from './pages/Home/HomePage';
 import LoginPage from './pages/Login/LoginPage';
+import UserDetails from './pages/UserDetails/UserDetails'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<App />} >
       <Route index={true} path='/' element={<HomePage />} />
       <Route path='/login' element={<LoginPage />} />
+      <Route path='/user-details' element={<UserDetails/>}/>
     </Route>
   ));
 
